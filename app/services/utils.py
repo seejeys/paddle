@@ -29,9 +29,3 @@ def looks_like_good_text(text: str) -> bool:
         return False
     alpha_num = re.findall(r"[A-Za-zА-Яа-я0-9\u4E00-\u9FFF]", cleaned)
     return len(alpha_num) >= 20
-
-
-def score_text_quality(text: str) -> int:
-    cleaned = normalize_whitespace(text)
-    alpha_num = len(re.findall(r"[A-Za-zА-Яа-я0-9\u4E00-\u9FFF]", cleaned))
-    return alpha_num
