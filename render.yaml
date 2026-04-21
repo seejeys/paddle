@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: closeframe-ocr
+    env: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: OCR_SHARED_SECRET
+        sync: false
