@@ -8,5 +8,5 @@ services:
     envVars:
       - key: OCR_SHARED_SECRET
         sync: false
-      - key: PADDLE_LANG
-        value: en
+      - key: TESSERACT_LANG
+        value: eng+rus+chi_sim

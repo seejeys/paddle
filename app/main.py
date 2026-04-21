@@ -10,7 +10,7 @@ from app.services.image_ocr import extract_text_from_image_bytes
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Closeframe OCR Backend")
+app = FastAPI(title="Closeframe OCR Backend (Tesseract)")
 
 OCR_SHARED_SECRET = os.getenv("OCR_SHARED_SECRET", "").strip()
 
